@@ -1,0 +1,48 @@
+/* 
+Radge Carbonel
+Gerryle Martinez
+CCS4 - 2C
+*/
+
+turn -160
+move 100
+turn 45
+move 100
+turn 25
+move 60
+turn -90
+move 50
+while !wall_in_front {
+    move 50
+    turn -90
+    }
+    turn -90
+    move 100
+
+loop 10000 {
+    while !wall_in_front {
+    move 50
+    }
+    while wall_in_front {
+        if empty_right {
+            turn 90
+            move 10
+            if wall_in_front{
+                break
+            }
+        }
+        if empty_left {
+            turn -90
+            move 10
+            if wall_in_front{
+                break
+            }
+        }
+        turn -90
+        move 70
+        while !wall_in_front {
+            move 75
+            }
+    }
+}
+
