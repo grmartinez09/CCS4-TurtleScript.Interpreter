@@ -12,6 +12,12 @@ turn 25
 move 60
 turn -90
 move 50
+loop 4 {
+    while !wall_in_front {
+        turn 100
+        move 25
+    }
+}
 while !wall_in_front {
     move 50
     turn -90
@@ -45,4 +51,3 @@ loop 10000 {
             }
     }
 }
-
