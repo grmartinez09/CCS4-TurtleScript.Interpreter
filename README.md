@@ -32,5 +32,5 @@ Input the following on Terminal
 
 ## How to Run
 1. Make sure Python is installed.
-2. Place 'interpreter.py' and your '.turtlescript' file in the same folder.
-3. Run the interpreter: python interpreter.py (Make sure that the directory of the folder is the correct path)
+2.  Run the interpreter: Make sure that the directory of the folder is the correct path
+3. In the terminal place python './interpreter.py' './sample.turtlescript' file in the same folder.
